@@ -59,6 +59,9 @@ Bundle 'Valloric/YouCompleteMe'
 "Bundle 'word_complete.vim'
 "Bundle 'SuperTab'
 
+Bundle 'Markdown-syntax'
+Bundle 'instant-markdown.vim'
+
 filetype plugin indent on     " required
 
 "To ignore plugin indent changes, instead use:
@@ -120,9 +123,9 @@ set smartcase
 set incsearch "incremental match
 
 " fold code
-set foldenable
-set foldlevel=3
-set foldmethod=syntax
+"set foldenable
+"set foldlevel=3
+"set foldmethod=syntax
 
 " compile program
 "let cur = getcwd()
@@ -218,6 +221,7 @@ nmap wm :WMToggle<cr>
 """"""""""""""""""""""""""""""
 " YouCompleteMe
 """"""""""""""""""""""""""""""
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_error_symbol = '>>'
 let g:ycm_warning_symbol = '>*'
 nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
