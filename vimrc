@@ -62,6 +62,8 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'Markdown-syntax'
 Bundle 'instant-markdown.vim'
 
+Bundle 'Syntastic'
+
 filetype plugin indent on     " required
 
 "To ignore plugin indent changes, instead use:
@@ -121,6 +123,8 @@ set showmatch "show matching brackets
 set ignorecase "ingore case 
 set smartcase  
 set incsearch "incremental match
+
+set pastetoggle=<F7>
 
 " fold code
 "set foldenable
